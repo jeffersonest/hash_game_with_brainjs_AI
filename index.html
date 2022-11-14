@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<section class="game-basis">
+    <div class="result-group">
+        <div>X:<span id="winnerX"></span></div>
+        <div>O:<span id="winnerO"></span></div>
+    </div>
+    <div>
+        <button class="game-btn" id="m00">-</button>
+        <button class="game-btn" id="m01">-</button>
+        <button class="game-btn" id="m02">-</button>
+    </div>
+    <div>
+        <button class="game-btn" id="m10">-</button>
+        <button class="game-btn" id="m11">-</button>
+        <button class="game-btn" id="m12">-</button>
+    </div>
+    <div>
+        <button class="game-btn" id="m20">-</button>
+        <button class="game-btn" id="m21">-</button>
+        <button class="game-btn" id="m22">-</button>
+    </div>
+
+    <span class="game-controls">
+        <span id="game-results" class="options">
+            Select the winner:
+            <label for="opt-x">X</label>
+            <input id="opt-x" type="radio" value="X" name="turn">
+            <label for="opt-o">O</label>
+            <input id="opt-o" type="radio" value="O" name="turn">
+        </span>
+        <span id="game-buttons">
+            <button id="check-btn" class="control-btn">Check</button>
+            <button id="train-btn" class="control-btn">Train</button>
+            <button id="clear-btn" class="control-btn">Clear</button>
+        </span>
+        <div id="game-loader">
+            <div>
+                <div class="hypnotic"></div>
+                <span>Learning</span>
+            </div>
+        </div>
+    </span>
+</section>
+
+
+<script src="./brain.js"></script>
+<script type="module" src="./index.js"></script>
+</body>
+</html>

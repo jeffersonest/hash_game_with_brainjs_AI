@@ -1,0 +1,137 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+}
+
+.game-basis {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-btn {
+    width: 80px;
+    height: 80px;
+    margin: 5px 3px;
+    cursor: pointer;
+}
+
+.game-controls {
+    height: 80px;
+    min-width: 260px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#game-buttons {
+    display: none;
+}
+
+.control-btn {
+    width: 80px;
+    height: 40px;
+    cursor: pointer;
+    color: white;
+    background: cadetblue;
+    border-radius: 5px;
+    border: none;
+    margin: 0 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.options {
+    height: 30px;
+}
+
+.train-results {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#train-btn {
+    display: none;
+}
+
+.result-group {
+    padding: 15px;
+    margin-bottom: 10px;
+    background: #f0f0f0;
+    width: 100%;
+    max-width: 260px;
+}
+
+#game-results {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.hypnotic {
+   width: 20px;
+   height: 40px;
+   display: grid;
+   background: linear-gradient(#5F9EA0 0 0) top/100% 1.6px,
+          radial-gradient(farthest-side at  top, #0000 calc(100% - 1.6px),#5F9EA0 calc(100% - 0.8px) ,#0000) top,
+          linear-gradient(#5F9EA0 0 0) bottom/100% 1.6px,
+          radial-gradient(farthest-side at  bottom, #0000 calc(100% - 1.6px),#5F9EA0 calc(100% - 0.8px) ,#0000) bottom;
+   background-size: 100% 0.8px,100% 50%;
+   background-repeat: no-repeat;
+   animation: hypnotic-k56gsf 2.4s infinite linear;
+}
+
+#game-loader {
+    margin-top: 15px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#game-loader > div {
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.hypnotic::before,
+.hypnotic::after {
+   content: "";
+   grid-area: 1/1;
+   background: inherit;
+   border: inherit;
+   animation: inherit;
+}
+
+.hypnotic::after {
+   animation-duration: 1.2s;
+}
+
+@keyframes hypnotic-k56gsf {
+   100% {
+      transform: rotate(1turn);
+   }
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: flex !important;
+}

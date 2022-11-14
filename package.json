@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "brain.js": "^2.0.0-beta.16",
+    "gpu.js": "^2.15.2"
+  },
+  "name": "velhajogo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT"
+}
